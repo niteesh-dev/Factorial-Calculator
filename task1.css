@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator Section */
+#calculator {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+/* Headings */
+.heading-1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading-2 {
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Input Section */
+.input-section {
+    margin-bottom: 20px;
+}
+
+.placeholder {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.Buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-left, .button-right {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button-left:hover, .button-right:hover {
+    background-color: #0056b3;
+}
+
+/* Results Section */
+.results-section {
+    margin-top: 20px;
+}
+
+.result-box {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-mono {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-gray-700 {
+    color: #4a4a4a;
+}
+
+.text-gray-600 {
+    color: #6c757d;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-lg {
+    font-size: 18px;
+}

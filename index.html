@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fact-calculator</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <div id="root">
+        <section id="calculator" class="py-20 bg-white element-highlight">
+          <div class="main-container" id="el-nld361d8">
+            <h2
+              class="heading-1"
+              id="el-ifd3kgz4">
+              Calculate Factorial
+            </h2>
+  
+            <div
+              class="sub-contaier-1"
+              id="container-1">
+              <h2 class="heading-2">Factorial Calculator</h2>
+  
+              <div class="input-section">
+                <input type="number" id="numberInput"
+                  class="placeholder"
+                  placeholder="Enter a number">
+              </div>
+  
+              <div class="Buttons">
+                <button onclick="calculateIterative()"
+                  class="button-left">
+                  Calculate (Iterative)
+                </button>
+                <button onclick="calculateRecursive()"
+                  class="button-right">
+                  Calculate (Recursive)
+                </button>
+              </div>
+  
+              <div class="results-section space-y-4">
+                <div class="result-box bg-gray-100 p-4 rounded-md">
+                  <h3 class="font-semibold text-gray-700 mb-2">Iterative Result:</h3>
+                  <p id="iterativeResult" class="font-mono text-lg">-</p>
+                  <p id="iterativeTime" class="text-sm text-gray-600 mt-1">Time: -</p>
+                </div>
+  
+                <div class="result-box bg-gray-100 p-4 rounded-md">
+                  <h3 class="font-semibold text-gray-700 mb-2">Recursive Result:</h3>
+                  <p id="recursiveResult" class="font-mono text-lg">-</p>
+                  <p id="recursiveTime" class="text-sm text-gray-600 mt-1">Time: -</p>
+                </div>
+              </div>
+  
+              <!-- <script>
+                function factorialIterative(n) {
+                  if (n < 0) return "Invalid input";
+                  if (n === 0 || n === 1) return 1;
+  
+                  let result = 1;
+                  for (let i = 2; i <= n; i++) {
+                    result *= i;
+                  }
+                  return result;
+                }
+  
+                function factorialRecursive(n) {
+                  if (n < 0) return "Invalid input";
+                  if (n === 0 || n === 1) return 1;
+                  return n * factorialRecursive(n - 1);
+                }
+  
+                function calculateIterative() {
+                  const input = document.getElementById('numberInput').value;
+                  const startTime = performance.now();
+                  const result = factorialIterative(parseInt(input));
+                  const endTime = performance.now();
+  
+                  document.getElementById('iterativeResult').textContent = result;
+                  document.getElementById('iterativeTime').textContent =
+                    `Time: ${(endTime - startTime).toFixed(4)} ms`;
+                }
+  
+                function calculateRecursive() {
+                  const input = document.getElementById('numberInput').value;
+                  const startTime = performance.now();
+                  const result = factorialRecursive(parseInt(input));
+                  const endTime = performance.now();
+  
+                  document.getElementById('recursiveResult').textContent = result;
+                  document.getElementById('recursiveTime').textContent =
+                    `Time: ${(endTime - startTime).toFixed(4)} ms`;
+                }
+  
+                // Add input validation
+                document.getElementById('numberInput').addEventListener('input', function (e) {
+                  const value = parseInt(e.target.value);
+                  if (value > 170) {
+                    alert('Please enter a number less than or equal to 170 to avoid overflow');
+                    e.target.value = 170;
+                  }
+                  if (value < 0) {
+                    e.target.value = 0;
+                  }
+                });
+              </script> -->
+            </div>
+          </div>
+          <script src="task2.js"></script>
+</body>
+</html>
